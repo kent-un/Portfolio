@@ -76,32 +76,43 @@ nav img{
 /* Slide 1 */ 
 .slider1content{
     display:flex;
+    position: unset;
     flex-direction: column;
     justify-content: space-around;
 }
 .circle{
     position:absolute;
-    width:200px;
-    height:200px;
-    background-color: black;
+    width:12em;
+    height:12em;
     border-radius: 50%;
-    top:35%;
-    left:25%;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    margin:auto;
     z-index:2;
+    background-image: url("img/self.jpeg");
+    background-size: cover;
 }
 .slider1content img{
     position:absolute;
-    width:400px;
-    height:300px;
+    width:25em;
+    height:18em;
     z-index:1;
-    top:33%;
-    left:8%;
-    transform: rotate(-30deg);
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    margin:auto;
+    transform: rotate(-40deg);
 }
 h1{
     background-color:white;
     padding:8px;
     position:absolute;
+    width:9em;
+    height:2em;
+    text-align: center;
 }
 #work h1{
     z-index:3;
@@ -147,7 +158,7 @@ hr{
     justify-content: space-around;
 }
 .projects{
-    margin:2%;
+    margin:1%;
     position:relative;
 }
 .details{
@@ -159,8 +170,8 @@ hr{
     bottom:0;
     z-index: 2;
     margin: auto;
-    width:150px;
-    height:100px;
+    width:140px;
+    height:90px;
     background-color:white;
 }
 .details h3{
@@ -175,13 +186,16 @@ hr{
     height:100%;
     background-color: rgba(255, 255, 255, 0.514);
 }
+.projects:first-of-type img{
+    filter: grayscale(100%);
+} 
 .details.five{
     background-image: url('img/calculatrice.png');
     background-size:cover;
 }
 .projects img{
-    width:180px;
-    height:150px;
+    width:160px;
+    height:140px;
     transform: rotate(-30deg);
 } 
 
