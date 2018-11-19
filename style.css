@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: #ececec;
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Laksaman', sans-serif;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+#hamburger-button{
+    border:none;
+    background-color:transparent;
+    font-size:2.4em;
+    padding-right: 15px;
+}
+nav img{
+    width:100px;
+    height:100px;
+}
+#hamburger{
+    display:none;
+}
+.slider-wrapper{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    -webkit-transition: -webkit-transform 1600ms;
+    transition: -webkit-transform 1600ms, transform 1600ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.slide1 {
+    left: 0;
+  }
+.slide2 {
+    left: 100%
+  }
+/* Slide 1 */ 
+.slider1content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.circle{
+    position:absolute;
+    width:200px;
+    height:200px;
+    background-color: black;
+    border-radius: 50%;
+    top:35%;
+    left:25%;
+    z-index:2;
+}
+.slider1content img{
+    position:absolute;
+    width:400px;
+    height:300px;
+    z-index:1;
+    top:33%;
+    left:8%;
+    transform: rotate(-30deg);
+}
+h1{
+    background-color:white;
+    padding:8px;
+    position:absolute;
+}
+#work h1{
+    z-index:3;
+    font-size:1.5em;
+    top:30%;
+    right:30%;
+}
+#name h1:first-of-type{
+    z-index:3;
+    font-size:1.5em;
+    top:60%;
+    right:20%;
+}
+#name h1:last-of-type{
+    z-index:3;
+    font-size:1.5em;
+    top:69%;
+    right:10%;
+}
+.pagination{
+    position:absolute;
+    z-index:3;
+    bottom: 30px;
+    left:0;
+    right:0;
+    margin:auto;
+    text-align: center;
+}
+#pagination{
+    font-size:2em;
+}
+hr{
+    margin-left:auto;
+    margin-right:auto;
+    width:3em;
+    height:1px;
+    background-color:black;
+}
+/* Slider 2 */ 
+.slider2content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects{
+    margin:2%;
+    position:relative;
+}
+.details{
+    display:flex;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 2;
+    margin: auto;
+    width:150px;
+    height:100px;
+    background-color:white;
+}
+.details h3{
+    z-index:3;
+    text-align: center;
+}
+.hoverImg{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+.details.five{
+    background-image: url('img/calculatrice.png');
+    background-size:cover;
+}
+.projects img{
+    width:180px;
+    height:150px;
+    transform: rotate(-30deg);
+} 
+
+/* Slider effect */
+
+input:first-of-type{
+    position: absolute;
+    z-index: 100;
+    bottom:2%;
+    right:50%;
+}
+input:last-of-type{
+    position: absolute;
+    z-index: 100;
+    bottom:2%;
+    left:50%;
+
+}
+.slide-radio1:checked,
+.slide-radio2:checked {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ea2e49;
+  background: transparent;
+}
+.slide-radio1:checked ~ .slider {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .slide-radio2:checked ~ .slider {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  .slide-radio1:checked ~ .slide1,
+  .slide-radio2:checked ~ .slide2,{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1
+  }
+
