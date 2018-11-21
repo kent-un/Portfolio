@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline" rel="stylesheet"> 
     <title>Quentin Dherret</title>
 </head>
 <body>
@@ -33,8 +34,8 @@
                     <!-- Replace it by pic-->
                 </div>
                 <div id="name">
-                    <h1>Q U E N T I N</h1>
-                    <h1>D H E R R E T</h1>
+                    <h1><span class="caps">Q</span>UENTIN</h1>
+                    <h1><span class="caps">D</span>HERRET</h1>
                 </div>
                 <div class="pagination">
                     <p id="pagination">01</p>
@@ -46,15 +47,15 @@
         <!-- Slider 2 -->
         <div class="slider slide2">
                 <div class="slider2content">
-                    <div class="projects">
+                    <div class="projects" id="one">
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details one">
                             <div class="hoverImg">
-                                <h3>Access Code School</h3>
+                                <h3>dataviz:<br>formats d'image</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="projects">
+                    <div class="projects" id="two">
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details two">
                             <div class="hoverImg">
@@ -62,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects">
+                    <div class="projects" id="three">
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details three">
                             <div class="hoverImg">
@@ -70,7 +71,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects">
+                    <div class="projects" id="four">
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details four">
                             <div class="hoverImg">
@@ -78,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects">
+                    <div class="projects" id="five">
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details five">
                             <div class="hoverImg">
@@ -86,11 +87,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects">
+                    <div class="projects" id="six">
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details six">
                             <div class="hoverImg">
-                                <h3>multiplication</h3>
+                                <a href="multiplication/index.php">
+                                <h3>multiplication</h3></a>
                             </div>
                         </div>
                     </div>
@@ -221,10 +223,6 @@
             </div>
         </div>
         <!--Slider 5-->
-        <div class="slider slide5">
-                <div class="slider5content">
-                </div>
-        </div>
         </div>
     </main>
     <footer>

@@ -52,3 +52,47 @@ $('#com').click(function(){
 		$('#hoverCom').css('display', 'none');
 	})
 })
+var filterVal = 'blur(0px)';
+$('.one').mouseenter(function (){
+	$('.projects').not(document.getElementById('one')).css('filter', 'blur(5px)');
+})
+$('.one').mouseleave(function (){
+	$('.projects').css('filter', filterVal);
+})
+//
+$('.two').mouseenter(function (){
+	$('.projects').not(document.getElementById('two')).css('filter', 'blur(5px)');
+})
+$('.two').mouseleave(function (){
+	$('.projects').css('filter', filterVal);
+})
+//
+$('.three').mouseenter(function (){
+	$('.projects').not(document.getElementById('three')).css('filter', 'blur(5px)');
+})
+$('.three').mouseleave(function (){
+	$('.projects').css('filter', filterVal);
+})
+//
+$('.four').mouseenter(function (){
+	$('.projects').not(document.getElementById('four')).css('filter', 'blur(5px)');
+})
+$('.four').mouseleave(function (){
+	$('.projects').css('filter', filterVal);
+})
+//
+$('.five').mouseenter(function (){
+	$('.projects').not(document.getElementById('five')).css('filter', 'blur(5px)');
+})
+$('.five').mouseleave(function (){
+	$('.projects').css('filter', filterVal);
+})
+//
+$('.six').mouseenter(function (){
+	$('.projects').not(document.getElementById('six')).css('filter', 'blur(5px)');
+})
+$('.six').mouseleave(function (){
+	$('.projects').css('filter', filterVal);
+})
+
+

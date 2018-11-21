@@ -195,12 +195,14 @@ h1{
     font-size:1.5em;
     top:60%;
     right:20%;
+    letter-spacing: 0.2em;
 }
 #name h1:last-of-type{
     z-index:3;
     font-size:1.5em;
     top:69%;
     right:10%;
+    letter-spacing: 0.2em;
 }
 .pagination{
     position:absolute;
@@ -488,7 +490,7 @@ form{
     position:absolute;
     background-color:black;
     top:-2em;
-    left:-1em;
+    right:1em;
     color:white;
     font-weight: bold;
     padding:10px;
@@ -510,3 +512,237 @@ form input, form textarea{
     background-color:black;
     color:white;
 }
+/* SEND FORM CSS */ 
+
+.sendForm{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    width:20em;
+    height:7.5em;
+    background-image: url('img/peinturejaune.png');
+    background-size: cover;
+}
+.sendFormtxt{
+    text-align: center;
+
+}
+
+@media screen and (max-height: 900px) and (max-width: 500px){
+    /*slider 1*/
+    .slider1content img{
+        width:20em;
+        height:18em;
+    }
+    h1{
+        padding:5px;
+        width:9em;
+        height:2em;
+        font-size:1.5em;
+        text-align: center;
+    }
+    /* slider 2*/ 
+    .details{
+        width:90px;
+        height:90px;
+    }
+    .projects img{
+        width:120px;
+        height:100px;
+        transform: rotate(-30deg);
+    } 
+    .details h3{
+        font-size:0.8em;
+    }
+    /* slider 3*/ 
+    .comp{
+        height:4em;
+    }
+    .comp img{
+        width:20em;
+        height:4em;
+    }
+    .comp h2{
+        text-align: center;
+        align-self: center;
+        letter-spacing: 0.3em;
+        font-size:1em;
+    }
+    .hoverComp img{
+        width:18em;
+        height:25em;
+    }
+    /* slider 4 */
+    .sectionXP{
+        height:50%;
+        bottom:-1em;
+        right:-1em;
+        font-size: 0.8em;
+    }
+    #oneXP{
+       top:-1em;
+       left:-1em; 
+    }
+    .dateXP{
+        width:15em;
+        height:2.5em;
+    }
+    .titleSection{
+        font-size: 0.8em;
+    }
+    /* contact */
+    form{
+        width:15em;
+        height:23em;
+    }
+    #formTitle{
+        font-size:0.8em;
+    }
+    #contenu{
+        height:4em;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 992px) {
+    .details{
+        width:160px;
+        height:160px;
+    }
+    .projects img{
+        width:200px;
+        height:190px;
+        transform: rotate(-30deg);
+    } 
+    .details h3{
+        font-size:1.4em;
+    }
+
+    #slider1{
+        position: absolute;
+        z-index: 8;
+        bottom:1%;
+        left:40%;
+    }
+    #slider2{
+        position: absolute;
+        z-index: 8;
+        bottom:1%;
+        left:45%;
+    }
+    #slider3{
+        position: absolute;
+        z-index: 8;
+        bottom:1%;
+        right:45%;
+    }
+    #slider4{
+        position: absolute;
+        z-index: 8;
+        bottom:1%;
+        right:40%;
+    }
+    form{
+        width:25em;
+        height:35em;
+    }
+    #formTitle{
+        font-size:1em;
+    }
+    #contenu{
+        height:15em;
+    }
+    /*slider 1 */
+    #work h1{
+        z-index:3;
+        font-size:1.5em;
+        top:35%;
+        right:50%;
+    }
+    #name h1:first-of-type{
+        z-index:3;
+        font-size:1.5em;
+        top:60%;
+        right:20%;
+    }
+    #name h1:last-of-type{
+        z-index:3;
+        font-size:1.5em;
+        top:65%;
+        right:15%;
+    }
+}
+@media screen and (min-width: 1080px) {
+    /*slider 1 */
+    #work h1{
+        left:0;
+        right:0;
+        top:0;
+        bottom:-40%;
+        width:25em;
+        margin:auto;
+        font-size:3em;
+        background-color:transparent;
+    }
+    #name h1:first-of-type{
+        background-color:transparent;
+        font-size:3em;
+        top:0;
+        bottom:0;
+        margin:auto;
+        left:5%;
+        right:unset;
+        font-family: 'Kumar One', cursive;
+    }
+    #name h1:last-of-type{
+        background-color:transparent;
+        font-size:3em;
+        top:0;
+        bottom:0;
+        margin:auto;
+        right:5%;
+        font-family: 'Kumar One', cursive;
+    }
+    .caps{
+        font-family:'Kumar One Outline', cursive;
+    }
+    /*slider 2 */
+    .slider2content{
+        width:70%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .details{
+        width:240px;
+        height:240px;
+    }
+    .projects img{
+        width:300px;
+        height:250px;
+        transform: rotate(-30deg);
+    } 
+    .details h3{
+        font-size:1.4em;
+    }
+
+    .slider4content{
+        height:60%;
+        width:50%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #name h1:first-of-type{
+        font-size:4em;
+    }
+    #name h1:last-of-type{
+        font-size:4em;
+    }
+    .slider2content{
+        width:60%;
+    }
+    .slider4content{
+        height:60%;
+        width:40%;
+    }
+}
+  
