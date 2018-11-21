@@ -6,8 +6,14 @@
     box-sizing: border-box;
 }
 html{
+    height:100%;
+    width:100%;
     background-color: #ececec;
 }
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 body{
     overflow: hidden;
     width: 100%;
@@ -131,6 +137,9 @@ li{
   }
 .slide3{
     left:200%;
+}
+.slide4{
+    left:300%;
 }
 /* Slide 1 */ 
 .slider1content{
@@ -347,26 +356,88 @@ hr{
     font-size:1em;
     
 }
+/* Slider 4 */ 
+
+.slider4content{
+    position:relative;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    height:60%;
+    width:70%;
+    background-color:white;
+    box-shadow: 40px 16px black;
+}
+.sectionXP{
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    z-index: 4;
+    width:100%;
+    height:50%;
+    bottom:-1.5em;
+    right:-1.5em;
+    background-color: #f6bc31ff;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(121, 121, 121, 0.685);
+}
+#oneXP{
+   top:-1.5em;
+   left:-1.5em; 
+}
+.title{
+    margin:0;
+    padding:0;
+}
+.dateXP{
+    border:5px solid white;
+    text-align: center;
+    width:16em;
+    height:2.5em;
+    color:white;
+    font-weight: bold;
+}
+.titleSection{
+    position:absolute;
+    top:-1.5em;
+    left:0;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    color:gray;
+}
+.titleXP{
+    text-align: center;
+}
 /* Slider effect */
 
 #slider1{
     position: absolute;
-    z-index: 100;
+    z-index: 8;
     bottom:2%;
-    right:50%;
+    left:40%;
 }
 #slider2{
     position: absolute;
-    z-index: 100;
+    z-index: 8;
     bottom:2%;
-    left:50%;
+    left:45%;
 }
 #slider3{
     position: absolute;
-    z-index: 100;
+    z-index: 8;
+    bottom:2%;
+    right:45%;
+}
+#slider4{
+    position: absolute;
+    z-index: 8;
     bottom:2%;
     right:40%;
-
 }
 
 .slide-radio1:checked,
@@ -387,4 +458,55 @@ hr{
 .slide-radio3:checked ~ .slider {
     -webkit-transform: translateX(-200%);
     transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .slider {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+}
+
+/* FORM CSS */ 
+main{
+    display:flex;
+    height:100%;
+    width:100%;
+    justify-content: space-around;
+}
+form{
+    position:relative;
+    width:20em;
+    height:30em;
+    background-color:white;
+    margin: auto;
+    box-shadow: 20px 16px #f6bc31ff;
+}
+#contentForm{
+    display:flex;
+    flex-direction: column;
+    margin:1em;
+}
+#formTitle{
+    position:absolute;
+    background-color:black;
+    top:-2em;
+    left:-1em;
+    color:white;
+    font-weight: bold;
+    padding:10px;
+    box-shadow: 0px 0px 20px rgba(121, 121, 121, 0.685);
+}
+form input, form textarea{
+    border:none;
+    border-bottom: 1px gray solid;
+    background-color:transparent;
+}
+#submit{
+    border:1px solid gray;
+    width:5em;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#submit:active{
+    background-color:black;
+    color:white;
 }
