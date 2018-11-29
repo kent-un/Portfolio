@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline" rel="stylesheet"> 
     <title>Quentin Dherret</title>
 </head>
@@ -19,10 +20,10 @@
     <main>
         <!-- Slider buttons -->
         <div class="slider-wrapper">
-                <input type="radio" name="slider" class="slide-radio1" checked id="slider1">
-                <input type="radio" name="slider" class="slide-radio2" id="slider2">
-                <input type="radio" name="slider" class="slide-radio3" id="slider3">
-                <input type="radio" name="slider" class="slide-radio4" id="slider4">
+                <input type="radio" name="slider" class="slide-radio1 radio" checked id="slider1">
+                <input type="radio" name="slider" class="slide-radio2 radio" id="slider2">
+                <input type="radio" name="slider" class="slide-radio3 radio" id="slider3">
+                <input type="radio" name="slider" class="slide-radio4 radio" id="slider4">
         <!-- Slider 1-->
         <div class="slider slide1">
             <div class="slider1content">
@@ -51,7 +52,8 @@
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details one">
                             <div class="hoverImg">
-                                <h3>dataviz:<br>formats d'image</h3>
+                                <a href="dataviz/avengers_end.png">
+                                <h3>dataviz:<br>formats d'image</h3></a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +61,8 @@
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details two">
                             <div class="hoverImg">
-                                <h3>wikiHtml</h3>
+                                <a href="wikihtml/index.php">
+                                <h3>wikiHtml</h3></a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +70,8 @@
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details three">
                             <div class="hoverImg">
-                                <h3>shi-fu-mi</h3>
+                                <a href="shifumi/shifumimod.html">
+                                <h3>shi-fu-mi</h3></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +79,8 @@
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details four">
                             <div class="hoverImg">
-                                <h3>puissance 4</h3>
+                                <a href="puissance4/p4mod.html">
+                                <h3>puissance 4</h3></a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +88,8 @@
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details five">
                             <div class="hoverImg">
-                                <h3>calculatrice</h3>
+                                <a href="calculator/calculator.html">
+                                <h3>calculatrice</h3></a>
                             </div>
                         </div>
                     </div>

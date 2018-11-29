@@ -1,22 +1,11 @@
 
 var activated= false;
-$('#burgerButton').on('tap',function(){
-	if(!activated){
-	$('#hamburger').css('display', 'block');
-	$('#burgerButton').css('background', 'white');
-	activated=true;}
-	else{$('#hamburger').css('display', 'none');
-	$('#burgerButton').css('background', 'black');
-	activated=false;
-	}
-})
+
 $('#burgerButton').click(function(){
 	if(!activated){
 	$('#hamburger').css('display', 'block');
-	$('#burgerButton').css('background', 'white');
 	activated=true;}
 	else{$('#hamburger').css('display', 'none');
-	$('#burgerButton').css('background', 'black');
 	activated=false;
 	}
 })
@@ -96,3 +85,35 @@ $('.six').mouseleave(function (){
 })
 
 
+$(function Sliding() {
+	$(".slide1").swipe( {
+	  //Generic swipe handler for all directions
+	  swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+		$(".slide-radio2").prop("checked", true);  
+	  }
+	});
+	$(".slide2").swipe( {
+		//Generic swipe handler for all directions
+		swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+		  $(".slide-radio3").prop("checked", true);  
+		},
+		swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+			$(".slide-radio1").prop("checked", true);  
+		}
+	  });
+	$(".slide3").swipe( {
+		//Generic swipe handler for all directions
+		swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+		  $(".slide-radio4").prop("checked", true);  
+		},
+		swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+			$(".slide-radio2").prop("checked", true);  
+		}
+	});
+	$(".slide4").swipe( {
+		//Generic swipe handler for all directions
+		swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+		  $(".slide-radio3").prop("checked", true);  
+		}
+	  });
+  });

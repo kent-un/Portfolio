@@ -24,7 +24,7 @@
             $email= $_POST['email'];
             $tel=$_POST['tel'];
             $objet=$_POST['objet'];
-            $message= $_POST['message'];
+            $message= $_POST['contenu'];
             
             $headers = 'MIME-Version: 1.0' . "\r\n";
             $headers .='From: '.$email." ". "\r\n".
