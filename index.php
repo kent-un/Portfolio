@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/LogoIndesign2px.png">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.touchSwipe.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline" rel="stylesheet"> 
@@ -62,7 +63,7 @@
                         <div class="details two">
                             <div class="hoverImg">
                                 <a href="wikihtml/index.php">
-                                <h3>wikiHtml</h3></a>
+                                <h3>wikiHtml</h3><div class="subtitle">premier projet</div></a>
                             </div>
                         </div>
                     </div>
@@ -88,8 +89,8 @@
                         <img src="img/peinture.png" alt="coup de peinture">
                         <div class="details five">
                             <div class="hoverImg">
-                                <a href="calculator/calculator.html">
-                                <h3>calculatrice</h3></a>
+                                <a href="cartevoeux/index.php">
+                                <h3>carte de voeux 2019</h3><div class="subtitle">desktop first</div></a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +99,7 @@
                         <div class="details six">
                             <div class="hoverImg">
                                 <a href="multiplication/index.php">
-                                <h3>multiplication</h3></a>
+                                <h3>multiplication</h3><div class="subtitle">mobile first</div></a>
                             </div>
                         </div>
                     </div>
@@ -121,10 +122,11 @@
                         <img src="img/peinturebleu2.png" alt="">
                         <div class="modalHover">
                             <div class="contentModal">
-                                <h2>HTML</h2>
-                                <h2>CSS</h2>
-                                <h2>JavaScript</h2>
+                                <h2>HTML, CSS</h2>
+                                <h2>JavaScript, JQuery</h2>
                                 <h2>PHP</h2>
+                                <h2>MySQL, MariaDB</h2>
+                                <h2>WordPress</h2>
                             </div>
                         </div>
                     </div>
