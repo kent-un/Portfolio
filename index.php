@@ -8,6 +8,7 @@
     <link rel="icon" href="img/LogoIndesign2px.png">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.touchSwipe.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline" rel="stylesheet"> 
     <title>Quentin Dherret</title>
 </head>
@@ -19,6 +20,14 @@
             </ul>
         </div>
     <main>
+        <div class="controls">
+            <div id="controlLeft">
+                <i class="fas fa-chevron-circle-left"></i>
+            </div>
+            <div id="controlRight">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
+        </div>
         <!-- Slider buttons -->
         <div class="slider-wrapper">
                 <input type="radio" name="slider" class="slide-radio1 radio" checked id="slider1">

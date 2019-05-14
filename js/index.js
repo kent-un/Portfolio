@@ -116,4 +116,49 @@ $(function Sliding() {
 		  $(".slide-radio3").prop("checked", true);  
 		}
 	  });
-  });
+	});
+	
+	$('#controlLeft').click(function(){
+		if($('input.slide-radio1').is(':checked')){
+
+		}else if($('input.slide-radio2').is(':checked')){
+			$(".slide-radio1").prop("checked", true); 
+		}else if($('input.slide-radio3').is(':checked')){
+			$(".slide-radio2").prop("checked", true); 
+		}else if($('input.slide-radio4').is(':checked')){
+			$(".slide-radio3").prop("checked", true); 
+		}
+	});
+	$('#controlRight').click(function(){
+		if($('input.slide-radio4').is(':checked')){
+
+		}else if($('input.slide-radio3').is(':checked')){
+			$(".slide-radio4").prop("checked", true); 
+		}else if($('input.slide-radio2').is(':checked')){
+			$(".slide-radio3").prop("checked", true); 
+		}else if($('input.slide-radio1').is(':checked')){
+			$(".slide-radio2").prop("checked", true); 
+		}
+	});
+
+
+// 	$(document).ready(function(){
+// 		$('input.slide-radio4').change(function(){
+// 			if(this.checked)
+// 				$('#controlRight').fadeOut('slow');
+// 			else
+// 				$('#controlRight').fadeIn('slow');
+// 		})
+// // 	})
+// 		$('input.slide-radio1').change(function(){
+// 			if(this.checked)
+// 				$('#controlLeft').css('visibility', 'hidden');
+// 			else
+// 				$('#controlLeft').css('visibility', 'visible');
+// 		});
+// 		$('input.slide-radio4').change(function(){
+// 			if(this.checked)
+// 				$('#controlLeft').css('opacity', 0);
+// 			else
+// 				$('#controlLeft').css('opacity', 0.5);
+// 		});
